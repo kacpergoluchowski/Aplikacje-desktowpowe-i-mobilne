@@ -7,7 +7,7 @@ namespace FirstProject
         static void Main(string[] args)
         {   
             Console.WriteLine("Hello World!");
-
+            /**
             string imie = "Jan";
             string nazwisko = "Kowalski";
             // x = nazwisko.Length;
@@ -22,6 +22,10 @@ namespace FirstProject
             Console.WriteLine(a);
 
             int b = 6. ;
+            **/
+
+            person firstPerson = new person();
+            firstPerson.showInfo();
         }
     }
 }
