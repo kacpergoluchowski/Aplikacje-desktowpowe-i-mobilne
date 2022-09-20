@@ -32,5 +32,20 @@ namespace FirstProject
             Console.WriteLine($"Wiek: {age}");
             Console.WriteLine("*******************************");
         }
+        public void setSurname(String newSurname)
+        {
+            if (newSurname != "")
+            {
+                surname = newSurname;
+            }
+            else
+            {
+                throw new Exception("Nazwisko zakazane");
+            }
+        }
+        public string getSurname()
+        {
+            return surname;
+        }
     }
 }

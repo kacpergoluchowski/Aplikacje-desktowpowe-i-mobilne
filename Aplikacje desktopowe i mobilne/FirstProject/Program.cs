@@ -26,6 +26,22 @@ namespace FirstProject
 
             person firstPerson = new person();
             firstPerson.showInfo();
+            // Console.WriteLine("------------------");
+            person secondPerson = firstPerson;
+            secondPerson.showInfo();
+
+            person thirdPerson = new person("ala", "kowalska", 18);
+            thirdPerson.showInfo();
+
+            secondPerson = thirdPerson;
+            secondPerson.showInfo();
+
+            thirdPerson.setSurname("Nowakowska");
+            thirdPerson.showInfo();
+
+            string dana = thirdPerson.getSurname();
+            Console.WriteLine(dana);
+
         }
     }
 }
