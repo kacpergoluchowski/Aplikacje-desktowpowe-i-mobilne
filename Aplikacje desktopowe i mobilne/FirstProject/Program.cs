@@ -42,6 +42,9 @@ namespace FirstProject
             string dana = thirdPerson.getSurname();
             Console.WriteLine(dana);
 
+            int d = thirdPerson.Age;
+            Console.WriteLine(d);
+
         }
     }
 }

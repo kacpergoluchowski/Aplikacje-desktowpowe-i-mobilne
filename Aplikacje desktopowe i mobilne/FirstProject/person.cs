@@ -9,8 +9,51 @@ namespace FirstProject
     class person
     {
         private string name;
+        public string Name
+        {
+            set
+            {
+                name = value;
+            }
+            get
+            {
+                return name;
+            }
+        }
+       
+        
+
         private string surname;
+        public string Surname
+        {
+            set
+            {
+                if(value != "")
+                {
+                    surname = value;
+                }
+            }
+            get
+            {
+                return surname;
+            }
+        }
+
         private int age;
+        public int Age
+        {
+            get
+            {
+                return age;
+            }
+        }
+        public float Height
+        {
+            get;
+            set;
+        }
+
+
 
         public person()
         {
