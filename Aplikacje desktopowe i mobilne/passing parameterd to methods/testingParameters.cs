@@ -8,6 +8,8 @@ namespace passing_parameterd_to_methods
 {
     class testingParameters
     {
+        #region Przekazywanie typów prostych
+
         public void test1()
         {
             byte number = 15;
@@ -17,8 +19,11 @@ namespace passing_parameterd_to_methods
             ChangeValueV2(ref number);
             //ChangeValueV2(ref 6); --> to jest błędne
             Console.WriteLine("Zmienna number: " + number);
-            int number = GetRandomNumber;
-            GetRandomNumber(out random);
+            //int random = 0;
+            //GetRandomNumber(out random);
+            GetRandomNumber();
+            Console.WriteLine(GetRandomNumber());
+            
         }
         private void ChangeValue(byte value)
         {
@@ -40,5 +45,24 @@ namespace passing_parameterd_to_methods
         {
             value = new Random().Next();
         }
+
+        #endregion
+
+        #region Przekazywanie typów referencyjnych
+
+        public void Test2()
+        {
+            person person = new person();
+            person.showInfo();
+        }
+
+        private void GetPerson(person p)
+        {
+            p.showInfo();
+            p.Age = 40;
+            p.showInfo();
+        }
+
+        #endregion
     }
 }

@@ -9,6 +9,10 @@ namespace passing_parameterd_to_methods
             Console.WriteLine("Hello World!");
             testingParameters testingParameters = new testingParameters();
             testingParameters.test1();
+            testingParameters.Test2();
+            
+
+            
         }
     }
 }
