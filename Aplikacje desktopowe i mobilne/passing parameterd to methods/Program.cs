@@ -6,10 +6,11 @@ namespace passing_parameterd_to_methods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Console.WriteLine("Hello World!");
             testingParameters testingParameters = new testingParameters();
-            testingParameters.test1();
+            // testingParameters.test1();
             testingParameters.Test2();
+            testingParameters.Test3();
             
 
             

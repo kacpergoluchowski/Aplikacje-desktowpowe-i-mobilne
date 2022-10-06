@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace passing_parameterd_to_methods
 {
+    struct PersonStruct
+    {
+        public string name;
+        public string surname;
+        public int age;
+    }
+
+
     class testingParameters
     {
         #region Przekazywanie typów prostych
@@ -54,6 +62,10 @@ namespace passing_parameterd_to_methods
         {
             person person = new person();
             person.showInfo();
+
+            //GetPerson(person);
+            //GetPerson2(person);
+            GetPerson3(ref person);
         }
 
         private void GetPerson(person p)
@@ -61,6 +73,30 @@ namespace passing_parameterd_to_methods
             p.showInfo();
             p.Age = 40;
             p.showInfo();
+        }
+        private void GetPerson2(person p)
+        {
+            p = new person();
+            p.showInfo();
+            p.Age = 40;
+            p.showInfo();
+        }
+        private void GetPerson3(ref person p)
+        {
+            
+            p = new person();
+            p.showInfo();
+            p.Age = 40;
+            p.showInfo();
+        }
+        #endregion
+
+        #region Przekazywanie struktur 
+
+        public void Test3()
+        {
+            PersonStruct struktura = new PersonStruct();
+            struktura.name = "adam";
         }
 
         #endregion
