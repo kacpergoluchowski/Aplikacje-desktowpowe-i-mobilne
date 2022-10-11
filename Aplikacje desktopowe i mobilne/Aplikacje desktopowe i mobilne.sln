@@ -5,7 +5,17 @@ VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstProject", "FirstProject\FirstProject.csproj", "{A9ED2226-DAD8-4151-86F4-05513AEDF239}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "passing parameterd to methods", "passing parameterd to methods\passing parameterd to methods.csproj", "{90AF0CF4-2D3D-4B24-93B5-2DFE76063DCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "passing parameterd to methods", "passing parameterd to methods\passing parameterd to methods.csproj", "{90AF0CF4-2D3D-4B24-93B5-2DFE76063DCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Konsola", "1. Konsola", "{CDA6CB5D-9A98-4155-8697-70A4B27EA1CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Podstawy", "01. Podstawy", "{E3B99ABA-DFBD-461C-A287-08712A54A642}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Parametry do metody", "02. Parametry do metody", "{C1795D4D-3204-4971-95B0-A16BC505F00B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Dziedziczenie i polimorfizm", "03. Dziedziczenie i polimorfizm", "{E832D69F-841E-4178-8555-C14265D044C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolymorphsimApp", "PolymorphsimApp\PolymorphsimApp.csproj", "{8D5E074D-AE7A-4934-9C22-A1C8624AD15F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +31,21 @@ Global
 		{90AF0CF4-2D3D-4B24-93B5-2DFE76063DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90AF0CF4-2D3D-4B24-93B5-2DFE76063DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90AF0CF4-2D3D-4B24-93B5-2DFE76063DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5E074D-AE7A-4934-9C22-A1C8624AD15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5E074D-AE7A-4934-9C22-A1C8624AD15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5E074D-AE7A-4934-9C22-A1C8624AD15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5E074D-AE7A-4934-9C22-A1C8624AD15F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A9ED2226-DAD8-4151-86F4-05513AEDF239} = {E3B99ABA-DFBD-461C-A287-08712A54A642}
+		{90AF0CF4-2D3D-4B24-93B5-2DFE76063DCA} = {C1795D4D-3204-4971-95B0-A16BC505F00B}
+		{E3B99ABA-DFBD-461C-A287-08712A54A642} = {CDA6CB5D-9A98-4155-8697-70A4B27EA1CA}
+		{C1795D4D-3204-4971-95B0-A16BC505F00B} = {CDA6CB5D-9A98-4155-8697-70A4B27EA1CA}
+		{E832D69F-841E-4178-8555-C14265D044C1} = {CDA6CB5D-9A98-4155-8697-70A4B27EA1CA}
+		{8D5E074D-AE7A-4934-9C22-A1C8624AD15F} = {E832D69F-841E-4178-8555-C14265D044C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C01B923-2B6C-49BC-9D0D-13B9E265EF8E}

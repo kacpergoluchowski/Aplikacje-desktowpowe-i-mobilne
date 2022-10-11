@@ -97,6 +97,15 @@ namespace passing_parameterd_to_methods
         {
             PersonStruct struktura = new PersonStruct();
             struktura.name = "adam";
+            Console.WriteLine("Pole name w Test 3 " + struktura.name);
+            GetPresonStruct(struktura);
+            Console.WriteLine("Pole name w Test 3 " + struktura.name);
+        }
+        private void GetPresonStruct(PersonStruct struktura)
+        {
+            Console.WriteLine("Pole name w GetPresonStruct " + struktura.name);
+            struktura.name = "Ewa";
+            Console.WriteLine("Pole name w GetPresonStruct " + struktura.name);
         }
 
         #endregion
