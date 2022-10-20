@@ -6,7 +6,14 @@ namespace PolymorphsimApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            dog firstDog = new dog();
+            dog secondDog = new dog("Burek", 5);
+            dog thirdDog = secondDog;
+            secondDog.showInfo();
+            thirdDog.showInfo();
+            firstDog.showInfo();
+            secondDog.Bark();
+            thirdDog.ChasePostman();
         }
     }
 }
