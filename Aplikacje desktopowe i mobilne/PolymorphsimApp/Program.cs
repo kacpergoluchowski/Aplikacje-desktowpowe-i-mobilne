@@ -14,6 +14,15 @@ namespace PolymorphsimApp
             firstDog.showInfo();
             secondDog.Bark();
             thirdDog.ChasePostman();
+
+            Cat firstCat = new Cat();
+            firstCat.showInfo();
+            Cat secondCat = new Cat("reksio", 15);
+            secondCat.showInfo();
+            secondCat.meow();
+
+            Cat thirdCat = new Cat(secondCat);
+            thirdCat.climbOnTree();
         }
     }
 }
