@@ -23,6 +23,19 @@ namespace PolymorphsimApp
 
             Cat thirdCat = new Cat(secondCat);
             thirdCat.climbOnTree();
+            ShowInfoForDog(firstDog);
+            //ShowInfoForDog(firstCat);
+            ShowInfoForCat(firstCat);
+
+        }
+
+        static void ShowInfoForDog(dog pies)
+        {
+            pies.showInfo();
+        }
+        static void ShowInfoForCat(Cat kot)
+        {
+            kot.showInfo();
         }
     }
 }
