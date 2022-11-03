@@ -39,6 +39,14 @@ namespace PolymorphsimApp
         {
             Console.WriteLine("Pies o imieniu " + name + " goni listonosza");
         }
+        public override void showInfo()
+        {
+            Console.WriteLine("****************");
+            Console.WriteLine("Przedstawienie psa: ");
+            Console.WriteLine(type + " o imieniu " + name + " ma " + age + " lat");
+            Console.WriteLine("****************");
+        }
     }
 }
+
     

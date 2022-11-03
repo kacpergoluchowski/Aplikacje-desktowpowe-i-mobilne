@@ -31,7 +31,7 @@ namespace PolymorphsimApp
             age = animalToCopy.age;
         }
 
-        public void showInfo()
+        public virtual void showInfo()
         {
             Console.WriteLine("****************");
             Console.WriteLine(type + " o imieniu " + name + " ma " + age + " lat");
