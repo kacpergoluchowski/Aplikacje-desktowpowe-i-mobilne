@@ -56,6 +56,7 @@ namespace TestCollections
             }
             return max;
         }
+        Console.Write();
         public double MaxFromDoubles(List<double> list)
         {
             double max = 0;
